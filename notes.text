@@ -1,0 +1,21 @@
+## replicating set up from jam-taste-test based on victor-hugo with netlify cms example site
+---------------------------------------------------------------------
+$ npm install
+victor-hugo specific commands instead of standard hugo:
+$ hugo server => to serve site with inbuilt hugo webserver on http://localhost:1313/
+$ hugo => to build static site to default /public/ directory
+$ npm start => serve with victor-hugo browser-sync server
+$ npm build
+(Hugo with a Gulp, Webpack, and PostCSS asset pipeline added)
+
+!!!!!!!!!!!!!!!!!
+need to fix gulp vulnerabilities gulp": "^3.9.1 switch to gulp 4
+https://codeburst.io/switching-to-gulp-4-0-271ae63530c0
+
+!! Note on continuous deployment: after deploying on netlify and cloning locally from GitHub repo can now push all local changes to GitHub to trigger netlify site build => do not need to manually push changes to production — netlify’s Git integration handles the continuous deployment
+
+
+<link href="https://fonts.googleapis.com/css?family=Caveat:400,700" rel="stylesheet">
+
+
+
