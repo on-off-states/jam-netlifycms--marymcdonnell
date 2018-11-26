@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Mary Mcdonnell</title>
+    <link>/pages/</link>
+    <description>Recent content in Pages on Mary Mcdonnell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 17 May 2017 13:03:58 -0400</lastBuildDate>
+    
+	<atom:link href="/pages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Wed, 17 May 2017 13:03:58 -0400</pubDate>
+      
+      <guid>/about/</guid>
+      <description>About testing css confusion Mary McDonnell’s artworks explore the qualities of pattern, line and colour in tandem with storytelling to evoke a deep sense of relation to place and it’s history. Shifting fluidly between textile, paint and mixed media works, she continues to draw inspiration from the local history, mythology and flora of her native Boyne Valley, and from the everyday happenings of family life.
+Genealogy Family genealogy provides provides a key focal point for exploring relation to past and to place in an ongoing experimentation with ways of using family related archives.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>/contact/</link>
+      <pubDate>Wed, 17 May 2017 13:03:58 -0400</pubDate>
+      
+      <guid>/contact/</guid>
+      <description> Please fill out the form below Let us know when you&amp;rsquo;d like to book a reservation and we&amp;rsquo;ll contact you within 30 min to confirm or find another time.
+ Send  </description>
+    </item>
+    
+  </channel>
+</rss>

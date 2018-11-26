@@ -14,8 +14,17 @@ https://codeburst.io/switching-to-gulp-4-0-271ae63530c0
 
 !! Note on continuous deployment: after deploying on netlify and cloning locally from GitHub repo can now push all local changes to GitHub to trigger netlify site build => do not need to manually push changes to production — netlify’s Git integration handles the continuous deployment
 
-
+-------------------------------------------------------------------
+CSS 
+-------------------------------------------------------------------
+side note on fonts
 <link href="https://fonts.googleapis.com/css?family=Caveat:400,700" rel="stylesheet">
 
+!!! DULLARD RABBIT HOLEBUT !!!
+working out where css for local server rendering
+renders fine on netlify but not showing locally with default victor-hugo set up here;
+with default hugo site/directory set up, css served from static directory and rendering OK on hugo default server with $hugo server
+
+DUH — OBVIOULSY JUST BECAUSE NOT SERVING FROM victor-hugo GULP SERVER!!!
 
 

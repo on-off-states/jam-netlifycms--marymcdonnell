@@ -3,7 +3,7 @@ languageCode = "en"
 title = "Mary Mcdonnell"
 
 [params]
-  description = "Website of Slane artist Mary Mcdonnell; built on [Victor Hugo](https://github.com/netlify/victor-hugo)."
+  description = "Artist in Slane" 
 
 [[menu.main]]
     name = "About"
