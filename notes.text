@@ -23,8 +23,11 @@ side note on fonts
 !!! DULLARD RABBIT HOLEBUT !!!
 working out where css for local server rendering
 renders fine on netlify but not showing locally with default victor-hugo set up here;
-with default hugo site/directory set up, css served from static directory and rendering OK on hugo default server with $hugo server
+with default hugo site/directory set up, css served from static directory and rendering OK on hugo default server with $ hugo server
 
-DUH — OBVIOULSY JUST BECAUSE NOT SERVING FROM victor-hugo GULP SERVER!!!
+DUH — OBVIOULSY JUST BECAUSE NOT SERVING FROM victor-hugo GULP SERVER
+$ npm start 
+----------------------------------------------------------------------
+
 
 
