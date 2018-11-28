@@ -17,7 +17,7 @@
       <pubDate>Wed, 17 May 2017 13:03:58 -0400</pubDate>
       
       <guid>/about/</guid>
-      <description>About testing css confusion Mary McDonnell’s artworks explore the qualities of pattern, line and colour in tandem with storytelling to evoke a deep sense of relation to place and it’s history. Shifting fluidly between textile, paint and mixed media works, she continues to draw inspiration from the local history, mythology and flora of her native Boyne Valley, and from the everyday happenings of family life.
+      <description>About  Mary McDonnell’s artworks explore the qualities of pattern, line and colour in tandem with storytelling to evoke a deep sense of relation to place and it’s history. Shifting fluidly between textile, paint and mixed media works, she continues to draw inspiration from the local history, mythology and flora of her native Boyne Valley, and from the everyday happenings of family life.
 Genealogy Family genealogy provides provides a key focal point for exploring relation to past and to place in an ongoing experimentation with ways of using family related archives.</description>
     </item>
     
@@ -29,6 +29,16 @@ Genealogy Family genealogy provides provides a key focal point for exploring rel
       <guid>/contact/</guid>
       <description> Please fill out the form below Let us know when you&amp;rsquo;d like to book a reservation and we&amp;rsquo;ll contact you within 30 min to confirm or find another time.
  Send  </description>
+    </item>
+    
+    <item>
+      <title>Exhibition</title>
+      <link>/exhibition/</link>
+      <pubDate>Wed, 17 May 2017 13:03:58 -0400</pubDate>
+      
+      <guid>/exhibition/</guid>
+      <description>Exhibition  As the forms of artistic output are diverse, so too are the sites of display. Commissioned pieces (textile wallhangings, mixed media works) for site specific installation and can be found on display in museums, heritage site visitor centers, banks, libraries, cafes as well as private homes, both in Ireland and further afield.
+Many exhibitions involve the bringing together a local group and setting a theme for making work: founder of local textile and art groups: Drogheda Quilters, Indigo, Alchemy, Ceangailte; active member of the Irish Patchwork Society and the Embroiders Guild; former owner of a Craft Shop and Gallery in Slane, Co.</description>
     </item>
     
   </channel>
