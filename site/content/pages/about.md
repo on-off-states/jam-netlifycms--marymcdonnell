@@ -3,12 +3,11 @@ date = "2017-05-17T13:03:58-04:00"
 title = "About"
 url = "/about"
 +++
-
----
-
 <!-- main content -->
-  <article>
-  <h1>About</h1>
+  <section>
+    <header class="c-section-header">
+      <h1 class="c-section-header__headline">About</h1>
+    </header>
     <p>Mary McDonnell’s artworks explore the qualities of pattern, line and colour in tandem with storytelling to evoke a deep sense of relation to place and it’s history. Shifting fluidly between textile, paint and mixed media works, she continues to draw inspiration from the local history, mythology and flora of her native Boyne Valley, and from the everyday happenings of family life.</p>
     <h3>Genealogy</h3>
     <p>Family genealogy provides provides a key focal point for exploring relation to past and to place in an ongoing experimentation with ways of using family related archives. A tactile engagement with different kinds of materials (photographs, maps, letters, newspapers) creates its own space of reflection and memory.</p>
@@ -16,8 +15,8 @@ url = "/about"
     <h3>The everyday</h3>
     <p>Subject matter arises from immediate aspects of everyday life, descriptive qualities often emerging from a spontaneous <!-- and whimsical --> encounter with the accidental in a hands-on experimentation with materials.</p>
     <p>The work reflects nuances of different moments in aesthetic engagement, ranging from whimsical to poignant. This playfulness is the basis for a circular reflexive practice between various aesthetic, from personal and commissioned work to  local exhibitions alongside art classes and workshops, all embedded in the specifics of place.</p>
-  </article>
-  <article>
+  </section>
+ 
   <h2>Raw content to be sifted and shifted</h2>
   <!-- Mary McDonnell’s artworks explore the qualities of pattern, line and colour in tandem with storytelling to evoke a deep sense of relation to place and it’s history. Shifting fluidly between textile, paint and mixed media works, she continues to draw inspiration from the local history, mythology and flora of her native Boyne Valley, and from the everyday happenings of family life -->
 
@@ -44,6 +43,7 @@ Growing up in a household that encouraged resourcefulness and using things to ha
 As a mother of four children, techniques in needlecraft, knitting, pottery, weaving, fabric dying were applied in various projects from making clothing to soft furnishings to decorative objects. The customization of techniques by adding a unique personal twist has become a signature of artistic output from early on. 
 
 This forms a core element of a distinctively generous approach to teaching adults in various situations: one that focuses on demystifying the art making process; opens up possibilities in the everyday for finding subjects to observe and render in artistic representation; stimulates the creative imagination while sharing practical skills, technique and know how. 
-  </article>
+  
 
+  
 

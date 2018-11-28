@@ -14,6 +14,7 @@ html {
   line-height: 1.5;
 }
 
+
 @media (min-width: 38em) {
   html {
     font-size: 20px;
@@ -33,7 +34,7 @@ a {
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   font-weight: bold;
-  line-height: 1.25;
+  /* line-height: 1.25; */
   color: #313131;
   text-rendering: optimizeLegibility;
 }
@@ -157,10 +158,11 @@ blockquote {
 
 img {
   display: block;
-  margin: 0 0 1rem;
+  /* margin: 0 0 1rem; */
+  margin: 0 auto 1em auto;
   border-radius: 5px;
   max-width: 100%;
-  min-height: 525px;
+  /* min-height: 525px; */
 
   @media (max-width: 30em) {
     min-height: 200px;
@@ -660,7 +662,7 @@ html {
 /* ################ DEFAULT SIDEBAR STRUCTURE #####################*/
 .sidebar {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 3rem 1rem;
   color: rgba(255, 255, 255, 0.5);
   background-color: #202020;
   a {
@@ -695,7 +697,7 @@ html {
     font-family: "Rock Salt", cursive;
     /* font-size: 3.25rem; */
     /* hack override temp quick fix */
-    font-size: 2.25em;
+    font-size: 2em;
     transition: color .2s ease;
     -webkit-font-smoothing: antialiased;
   }
@@ -723,17 +725,24 @@ a.sidebar-nav-item {
   font-weight: bold;
 }
 
-@media (min-width: 48em) {
+/* @media (min-width: 48em) {
   .sidebar-sticky {
     position: absolute;
     right: 1rem;
     bottom: 1rem;
     left: 1rem;
   }
-}
+} */
 
+/* MAIN CONTENT */
+.c-section-header {
+  margin: 0;
+}
+.c-section-header__headline {
+  text-align: center;
+}
 .content {
-  padding-top: 4rem;
+  padding-top: 3rem;
   padding-bottom: 4rem;
 
   small {
