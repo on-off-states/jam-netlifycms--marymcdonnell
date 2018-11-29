@@ -71,4 +71,16 @@
     <loc>/gallery/blackbird/</loc>
   </url>
   
+  <url>
+    <loc>/gallery/outside/</loc>
+  </url>
+  
+  <url>
+    <loc>/gallery/portrait/</loc>
+  </url>
+  
+  <url>
+    <loc>/gallery/letter/</loc>
+  </url>
+  
 </urlset>

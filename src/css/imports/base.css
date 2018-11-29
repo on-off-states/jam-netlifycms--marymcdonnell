@@ -23,7 +23,8 @@ html {
 
 body {
   color: #515151;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: #ccc;
 }
 
 a {
@@ -666,7 +667,8 @@ html {
   color: rgba(255, 255, 255, 0.5);
   background-color: #202020;
   a {
-    color: #fff;
+    /* color: #fff; */
+    color:#ccc;
     transition: color .2s ease;
     &:hover, &:focus, &:hover h1, &:focus h1 {
       color: #ff7660;
@@ -692,7 +694,8 @@ html {
 
 .sidebar-about {
   h1 {
-    color: #fff;
+    /* color: #fff; */
+    color:#ccc;
     margin: 0 0 .35em 0;
     font-family: "Rock Salt", cursive;
     /* font-size: 3.25rem; */
