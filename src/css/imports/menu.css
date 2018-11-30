@@ -63,8 +63,10 @@
   }
 
   button {
-    color: white;
-    background: #ff7660;
+    /* color: white; */
+    /* background: #ff7660; */
+    color: #ccc;
+    background:#696969;
     border: none;
     cursor: pointer;
     transition: background .2s ease;

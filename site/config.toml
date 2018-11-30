@@ -18,10 +18,10 @@ title = "Mary Mcdonnell"
     name = "Exhibition"
     url  = "/exhibition"
     weight = 3
-# [[menu.main]]
-#     name = "Gallery"
-#     url = "/gallery"
-#     weight = 2
+[[menu.main]]
+    name = "Gallery"
+    url = "/gallery"
+    weight = 2
 [[menu.main]]
 name = "Teaching"
 url = "/teaching"
