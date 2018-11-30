@@ -29,9 +29,14 @@ DUH — OBVIOULSY JUST BECAUSE NOT SERVING FROM victor-hugo GULP SERVER
 $ npm start 
 ----------------------------------------------------------------------
 
-** MARKDOWN SIDENOTE **
-<hr> = ---
+** MARKDOWN SIDENOTES **
+
+* <hr> = ---
 https://gist.github.com/jonschlinkert/5854601
+
+* WHATCH OUT FOR WHITE SPACE! it counts and creates unexpected behaviour
+
+
 ----------------------------------------------------------------------
 
 
