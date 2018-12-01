@@ -18,7 +18,7 @@ url = "/exhibition"
     <ul class="c-event-meta">
       <li><cite>The Letter</cite></li>
       <li><time datetime="2018-11-09"></time>9th<time datetime="PT4H">–</time><time datetime="2018-11-30">30th November</time></li>
-      <<li>Kraft Kaffee, Oldcastle</li> <!-- (open daily Tuesday - Saturday, 10am – 5pm. -->
+      <li>Kraft Kaffee, Oldcastle</li> <!-- (open daily Tuesday - Saturday, 10am – 5pm. -->
     </ul> 
     <p><cite>The Letter</cite> presents a new body of work that revisits the memory of a story told about a cherished piece of family memorabilia: the artist remembers her father, Ray Cogan, speaking about the letter written to him by his grandmother, Elizabeth Callery, congratulating him on his plan for marriage. <!-- (mm-slane exhibition letter artwork. jpg) --></p>
     <h3>Process</h3>
