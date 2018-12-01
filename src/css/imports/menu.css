@@ -61,18 +61,27 @@
   .buttons {
     text-align: center;
   }
-
+/* !!!!! BEM class component for buttons needed */
   button {
     /* color: white; */
     /* background: #ff7660; */
+    /* var for colors */
     color: #ccc;
     background:#696969;
     border: none;
     cursor: pointer;
+    /* var for transition */
     transition: background .2s ease;
-
+    /* var for colors */
+    /* text-transform: uppercase;
+    letter-spacing: .05em; */
     &:hover {
-      background: #d35b48;
+      /* background: #d35b48; scarlet */
+      background: #ccc;
+      background: #515151;
+      color:#696969;
+      color:#515151;
+      color:#ccc;
     }
 
     &.half-button {

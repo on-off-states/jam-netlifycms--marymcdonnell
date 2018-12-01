@@ -26,10 +26,16 @@ body {
   /* background-color: #fff; */
   background-color: #ccc;
 }
-
+/* general body text */
 a {
+  /* !!! var colors */
   color: #268bd2;
+  color: #AB7D8A;
+  color: rgb(177, 66, 149);
   text-decoration: none;
+}
+a:hover {
+  color: inherit;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -66,6 +72,7 @@ p {
 
 strong {
   color: #303030;
+  /* color: rgb(177, 66, 149); */
 }
 
 ul, ol, dl {
@@ -156,12 +163,14 @@ blockquote {
     padding-left: 1.25rem;
   }
 }
-
+/* !!!!!! clarify fluid images and gallery carousel markup */
 img {
   display: block;
   /* margin: 0 0 1rem; */
   margin: 0 auto 1em auto;
   border-radius: 5px;
+  width: 100%;
+  height: auto;
   max-width: 100%;
   /* min-height: 525px; */
 
@@ -236,7 +245,166 @@ tbody tr:nth-child(odd) {
     letter-spacing: 0;
   }
 }
+/* ############!!!!!!!!!!!!! */
+html {
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+}
 
+@media (min-width: 48em) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 58em) {
+  html {
+    font-size: 20px;
+  }
+}
+/* ################ DEFAULT SIDEBAR STRUCTURE #####################*/
+.sidebar {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #202020;
+  a {
+    /* !!! var colors */
+    /* color: #fff; */
+    color:#ccc;
+    transition: color .2s ease;
+    &:hover, &:focus, &:hover h1, &:focus h1 {
+      /* color: #ff7660; scarlet */
+      /* color: #AB7D8A; */
+      color: rgb(177, 66, 149);
+      text-decoration: none;
+    }
+  }
+}
+
+@media (min-width: 48em) {
+  .sidebar {
+   
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 18rem;
+    text-align: left;
+ 
+    /* display: inline-block; */
+  } 
+  
+}
+
+.sidebar-about {
+  h1 {
+    /* color: #fff; */
+    color:#ccc;
+    margin: 0 0 .35em 0;
+    font-family: "Rock Salt", cursive;
+    /* font-size: 3.25rem; */
+    /* hack override temp quick fix */
+    font-size: 2em;
+    transition: color .2s ease;
+    -webkit-font-smoothing: antialiased;
+  }
+  .lead {
+    font-size: .8em;
+  }
+}
+
+.sidebar-nav {
+  padding-left: 0;
+  list-style: none;
+}
+/* ?????????????????????? */
+.sidebar-nav-item {
+  display: block;
+}
+
+a.sidebar-nav-item {
+  &:hover, &:focus {
+    /* color: #ff7660; */
+    /* testing */
+    color: #AB7D8A;
+  }
+}
+
+.sidebar-nav-item.active {
+  font-weight: bold;
+}
+
+/* @media (min-width: 48em) {
+  .sidebar-sticky {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+  }
+} */
+
+/* MAIN CONTENT */
+.c-section-header {
+  margin: 0;
+}
+.c-section-header__headline {
+  text-align: center;
+}
+.content {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+
+  small {
+    text-align: center;
+  }
+}
+
+@media (min-width: 48em) {
+  .content {
+    max-width: 38rem;
+    margin-left: 20rem;
+    margin-right: 2rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .content {
+    margin-left: 22rem;
+    margin-right: 4rem;
+  }
+}
+
+@media (min-width: 48em) {
+  .layout-reverse {
+    .sidebar {
+      left: auto;
+      right: 0;
+    }
+    .content {
+      margin-left: 2rem;
+      margin-right: 20rem;
+    }
+  }
+}
+
+@media (min-width: 64em) {
+  .layout-reverse .content {
+    margin-left: 4rem;
+    margin-right: 22rem;
+  }
+}
+
+/* video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+} */
+
+/* ################!!!!!!!!! CLEAN UP !!!!!!!!! ##################### */
 .page, .post {
   margin-bottom: 4em;
 }
@@ -280,8 +448,10 @@ tbody tr:nth-child(odd) {
       font-size: 75%;
       color: #999;
     }
+    
     a:hover {
-      color: #268bd2;
+      /* color: #268bd2; */
+
       text-decoration: none;
       small {
         color: inherit;
@@ -643,157 +813,4 @@ a.pagination-item:hover {
   .nt + .nt {
     color: #999;
   }
-}
-
-html {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
-}
-
-@media (min-width: 48em) {
-  html {
-    font-size: 16px;
-  }
-}
-
-@media (min-width: 58em) {
-  html {
-    font-size: 20px;
-  }
-}
-/* ################ DEFAULT SIDEBAR STRUCTURE #####################*/
-.sidebar {
-  text-align: center;
-  padding: 3rem 1rem;
-  color: rgba(255, 255, 255, 0.5);
-  background-color: #202020;
-  a {
-    /* color: #fff; */
-    color:#ccc;
-    transition: color .2s ease;
-    &:hover, &:focus, &:hover h1, &:focus h1 {
-      color: #ff7660;
-      text-decoration: none;
-    }
-  }
-}
-
-@media (min-width: 48em) {
-  .sidebar {
-   
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 18rem;
-    text-align: left;
- 
-    /* display: inline-block; */
-  } 
-  
-}
-
-.sidebar-about {
-  h1 {
-    /* color: #fff; */
-    color:#ccc;
-    margin: 0 0 .35em 0;
-    font-family: "Rock Salt", cursive;
-    /* font-size: 3.25rem; */
-    /* hack override temp quick fix */
-    font-size: 2em;
-    transition: color .2s ease;
-    -webkit-font-smoothing: antialiased;
-  }
-  .lead {
-    font-size: .8em;
-  }
-}
-
-.sidebar-nav {
-  padding-left: 0;
-  list-style: none;
-}
-
-.sidebar-nav-item {
-  display: block;
-}
-
-a.sidebar-nav-item {
-  &:hover, &:focus {
-    color: #ff7660;
-  }
-}
-
-.sidebar-nav-item.active {
-  font-weight: bold;
-}
-
-/* @media (min-width: 48em) {
-  .sidebar-sticky {
-    position: absolute;
-    right: 1rem;
-    bottom: 1rem;
-    left: 1rem;
-  }
-} */
-
-/* MAIN CONTENT */
-.c-section-header {
-  margin: 0;
-}
-.c-section-header__headline {
-  text-align: center;
-}
-.content {
-  padding-top: 3rem;
-  padding-bottom: 4rem;
-
-  small {
-    text-align: center;
-  }
-}
-
-@media (min-width: 48em) {
-  .content {
-    max-width: 38rem;
-    margin-left: 20rem;
-    margin-right: 2rem;
-  }
-}
-
-@media (min-width: 64em) {
-  .content {
-    margin-left: 22rem;
-    margin-right: 4rem;
-  }
-}
-
-@media (min-width: 48em) {
-  .layout-reverse {
-    .sidebar {
-      left: auto;
-      right: 0;
-    }
-    .content {
-      margin-left: 2rem;
-      margin-right: 20rem;
-    }
-  }
-}
-
-@media (min-width: 64em) {
-  .layout-reverse .content {
-    margin-left: 4rem;
-    margin-right: 22rem;
-  }
-}
-
-video {
-  object-fit: cover;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
 }
