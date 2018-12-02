@@ -34,7 +34,7 @@ a {
   color: rgb(177, 66, 149);
   text-decoration: none;
 }
-a:hover {
+a:hover, a:active {
   color: inherit;
 }
 
@@ -272,7 +272,7 @@ html {
     /* color: #fff; */
     color:#ccc;
     transition: color .2s ease;
-    &:hover, &:focus, &:hover h1, &:focus h1 {
+    &:hover, &:focus, &:active, &:hover h1, &:focus h1, &:active h1 {
       /* color: #ff7660; scarlet */
       /* color: #AB7D8A; */
       color: rgb(177, 66, 149);
