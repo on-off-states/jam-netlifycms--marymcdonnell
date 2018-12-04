@@ -6,10 +6,57 @@
     <description>Recent content on Mary Mcdonnell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 17 May 2017 13:03:58 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 03 Dec 2018 18:45:31 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugo Directory Structure</title>
+      <link>/dev/</link>
+      <pubDate>Mon, 03 Dec 2018 18:45:31 +0000</pubDate>
+      
+      <guid>/dev/</guid>
+      <description> Understanding hugo directory structure   </description>
+    </item>
+    
+    <item>
+      <title>cabbage</title>
+      <link>/food/cabbage/</link>
+      <pubDate>Sun, 02 Dec 2018 19:21:09 +0000</pubDate>
+      
+      <guid>/food/cabbage/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dev Content File Test</title>
+      <link>/dev/</link>
+      <pubDate>Sun, 02 Dec 2018 19:17:05 +0000</pubDate>
+      
+      <guid>/dev/</guid>
+      <description>Testing dev/dev-content-file-test.md need to go over how content structure works again and get relation between section content and layout template files</description>
+    </item>
+    
+    <item>
+      <title>About test</title>
+      <link>/about-test/</link>
+      <pubDate>Thu, 29 Nov 2018 19:33:48 +0000</pubDate>
+      
+      <guid>/about-test/</guid>
+      <description>About  Mary McDonnell’s artworks explore the qualities of pattern, line and colour in tandem with storytelling to evoke a deep sense of relation to place and it’s history. Shifting fluidly between textile, paint and mixed media works, she continues to draw inspiration from the local history, mythology and flora of her native Boyne Valley, and from the everyday happenings of family life.
+Genealogy Family genealogy provides provides a key focal point for exploring relation to past and to place in an ongoing experimentation with ways of using family related archives.</description>
+    </item>
+    
+    <item>
+      <title>Teaching</title>
+      <link>/teaching/</link>
+      <pubDate>Thu, 29 Nov 2018 19:17:06 +0000</pubDate>
+      
+      <guid>/teaching/</guid>
+      <description>Teaching  Growing up in a household that encouraged resourcefulness and using things to hand, fed creative exploration through art and craft, and led to teacher training as a home economics secondary school teacher.
+Innovative customisation of traditional techniques in needlecraft,knitting, pottery, weaving, dying in the making of clothes, soft furnishings and decorative objects formed the basis early on for a playful, open and cross fertising art practice rooted in the everyday of family life.</description>
+    </item>
     
     <item>
       <title>About</title>
@@ -51,20 +98,21 @@ Many exhibitions involve the bringing together a local group and setting a theme
     </item>
     
     <item>
+      <title>Teaching manual</title>
+      <link>/teaching-manual/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/teaching-manual/</guid>
+      <description>Teaching manual  Growing up in a household that encouraged resourcefulness and using things to hand, inspired a creative spirit that found expression in making arts and crafts,leading to undergoing training as a home economics secondary school teacher.
+As a mother of four children, techniques in needlecraft, knitting, pottery, weaving, fabric dying were applied in various projects from making clothing to soft furnishings to decorative objects. The customization of techniques by adding a unique personal twist has become a signature of artistic output from early on.</description>
+    </item>
+    
+    <item>
       <title>blackbird textile</title>
       <link>/gallery/blackbird/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/gallery/blackbird/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>outside</title>
-      <link>/gallery/outside/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/gallery/outside/</guid>
       <description></description>
     </item>
     

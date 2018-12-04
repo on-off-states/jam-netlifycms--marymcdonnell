@@ -1,6 +1,7 @@
 baseurl = "/"
 languageCode = "en"
 title = "Mary Mcdonnell"
+metaDataFormat = "toml"
 
 [params]
   description = "Artist in Slane" 
@@ -27,10 +28,10 @@ name = "Teaching"
 url = "/teaching"
 weight = 4
 # need to spend time working how dev content section should work
-# [[menu.main]]
-# name = "Dev"
-# url = "/dev"
-# weight = 5
+[[menu.main]]
+name = "Dev"
+url = "/dev"
+weight = 5
 # testing purposes only
 # [[menu.main]]
 # name = "Food"

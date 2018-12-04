@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dev notes index on Mary Mcdonnell</title>
+    <link>/dev/</link>
+    <description>Recent content in Dev notes index on Mary Mcdonnell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 02 Dec 2018 18:40:41 +0000</lastBuildDate>
+    
+	<atom:link href="/dev/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo Directory Structure</title>
+      <link>/dev/</link>
+      <pubDate>Mon, 03 Dec 2018 18:45:31 +0000</pubDate>
+      
+      <guid>/dev/</guid>
+      <description> Understanding hugo directory structure   </description>
+    </item>
+    
+    <item>
+      <title>Dev Content File Test</title>
+      <link>/dev/</link>
+      <pubDate>Sun, 02 Dec 2018 19:17:05 +0000</pubDate>
+      
+      <guid>/dev/</guid>
+      <description>Testing dev/dev-content-file-test.md need to go over how content structure works again and get relation between section content and layout template files</description>
+    </item>
+    
+  </channel>
+</rss>
