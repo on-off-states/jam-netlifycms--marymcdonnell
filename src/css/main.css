@@ -1,2 +1,3 @@
-@import "imports/base.css";
-@import "imports/menu.css";
+@import "imports/_vars";
+@import "imports/_base.css";
+

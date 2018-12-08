@@ -1,0 +1,15 @@
+{{ partial "header" . }}
+
+<main class="content container">
+  <h2>Hello from single.html</h2>
+  <div class="meta">
+    <ul>
+      <li>This is {{ .Params.dir }}</li>
+      <!-- <li><em>{{ .Params.contentType }} content (Kind = {{ .Kind }}): using layouts/dev/list.html</em><br />ie. section specific list template overriding default _default/list.html</li> -->
+    </ul>
+  </div>
+  {{ .Content }}
+</main>
+
+
+{{ partial "footer" . }}

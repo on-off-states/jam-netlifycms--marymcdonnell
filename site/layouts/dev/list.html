@@ -1,5 +1,26 @@
 {{ partial "header" . }}
 <header class="c-section-header">
     <h1 class="c-section-header__headline">{{ .Section }}</h1>
+    <h2 class="c-section-header__headline"></h2>
 </header>
+<div class="content container">
+  <div class="meta">
+    <ul>
+      <li>This is {{ .Params.dir }}</li>
+      <li><em>{{ .Params.contentType }} content (Kind = {{ .Kind }}): using layouts/dev/list.html</em><br />ie. section specific list template overriding default _default/list.html</li>
+    </ul>
+  </div>
+    <h2>Displaying dev section specific _index.md .Content</h2>
+    {{ .Content }}
+    <h2>Looping through section pages</h2>
+    {{ range .Pages }}
+    <menu>
+        <ul>
+            <li><a href="{{ .URL }}"> {{ .Title }}</a></li>
+        </ul>
+    </menu>
+
+    {{ end }}
+    
 {{ partial "footer" . }}
+

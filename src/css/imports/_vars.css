@@ -6,6 +6,8 @@
 /*https://htmlcolorcodes.com/color-chart/*/
 :root {
   --var-name:#424242;
+  --base-dark: #515151;
+  --base-light: #eee;
   
   /* #AB7D8A mulberry #95B4B3 greentinge */
 	

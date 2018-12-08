@@ -1,0 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic|PT+Sans:700);
+
+* {
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  width:100%;
+  max-width: 100%;
+}
+html {
+  font-size: 100%;
+  line-height: 1.5;
+}
+body {
+  color: var(--base-dark);
+  background-color: var(--base-light);
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+}
+a {
+  color: inherit;
+}
+.wrap {
+  max-width: 50em;
+  margin: 0 auto;
+  padding: 0 .5em;
+}
