@@ -16,6 +16,7 @@ body {
   color: var(--base-dark);
   background-color: var(--base-light);
   font-family: "PT Sans", sans-serif;
+  font-size: 1.5em;
   font-weight: 400;
 }
 a {
