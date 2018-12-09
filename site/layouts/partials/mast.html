@@ -1,0 +1,13 @@
+<header class="c-mast">
+  <a href="{{ .Site.BaseURL }}"><h1>{{ .Site.Title }}</h1></a>
+  <p class="c-mast__desc">{{ .Site.Params.description | markdownify }}</p>
+  <nav class="c-main-nav">
+    <ul>
+      <li><a href="/">Home</a> </li>
+      {{ range .Site.Menus.main }}
+        <li><a href="{{.URL}}"> {{ .Name }} </a></li>
+      {{end}}
+    </ul>
+  </nav>
+</header>
+ 

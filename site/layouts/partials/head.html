@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="{{ .Site.LanguageCode }}">
+<head>
+  <meta http-equiv="cleartype" content="on">
+  <meta charset="utf-8">
+  <!-- <meta http-equiv="content-type" content="text/html; charset=utf-8"> -->
+  {{ .Hugo.Generator }}
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width="device-width, initial-scale=1.0>
+    <meta name="title" content="" />
+  <link rel="shortlink" href="" />
+  <link rel="canonical" href="" />
+  <!-- Make sure relevant meta tags are added for every page not just duplicating index: add keywords and phrases that are relevant and correspond to the text on that specific page -->
+  <meta name="description" content="" />
+  <!-- abstract tag used by some search engines to archive site -->
+  <meta name="abstract"  content="" />
+  <meta name="keywords" content="" />
+    
+  
+  {{ if .IsHome }}
+  <title>{{ .Site.Title }}</title>
+  {{ else }}
+  <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
+  {{ end }}
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/main.css">
+  <!-- Icons -->
+  <!-- <link rel="shortcut icon" href="/img/favicon.png"> -->
+
+</head>
+<!-- !!! clarify urlize  !!! -->
+<body class="{{ .Section | urlize }}">
+  <div class="wrap">
+
+{{ partial "mast" . }}

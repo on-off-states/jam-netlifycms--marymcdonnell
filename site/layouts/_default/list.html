@@ -1,4 +1,4 @@
-{{ partial "header" . }}
+{{ partial "head" . }}
 
 <div class="content container {{ .Title }} {{ .Section | urlize }}">
   
@@ -65,5 +65,5 @@
     </div>
   {{ end }}
 </div>
-
 {{ partial "footer" . }}
+{{ partial "tail" . }}
