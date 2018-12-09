@@ -8,7 +8,13 @@
   --var-name:#424242;
   --base-dark: #515151;
   --base-light: #eee;
+  --base-mid: #a0a0a0;
+  --accent: #b12cb8;
   
   /* #AB7D8A mulberry #95B4B3 greentinge */
 	
+}
+/* transitions */
+:root {
+  --transition: all 0.3s ease;
 }
