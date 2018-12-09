@@ -20,6 +20,9 @@ body {
   font-weight: 400;
 }
 /* temp prototyping typography */
+h1,h2,h3,h4 {
+  line-height: 1em;
+}
 a {
   color: inherit;
   text-decoration: none;
