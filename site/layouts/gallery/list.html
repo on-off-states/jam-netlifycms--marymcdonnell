@@ -1,0 +1,24 @@
+{{ partial "head" . }}
+
+<main class="main-content main-content--{{ .Section | urlize }}">
+  <header class="c-section-header">
+    <h1 class="c-section-header__headline">{{ .Section }}</h1>
+  </header>
+  <div class="gallery-carousel">
+    {{ range where .Pages "Section" "gallery" }}
+      <figure><img src="{{ .Params.image }}" alt="" />
+        <figcaption>{{ .Params.description }}</figcaption>
+      </figure>
+    {{ end }}
+  </div>
+  <div class="buttons">
+    <button class="prev c-btn">prev</button>
+    <button class="next c-btn">next</button>
+  </div>
+  <article>
+    <h2>Hard coded notes (<code>layouts/gallery/list.html</code>)</h2>
+    <p>Some article text for additional content relating to selected image. For making relational links to other content—make use of taxonomies?</p>
+  </article>    
+</main>
+{{ partial "footer" . }}
+{{ partial "tail" . }}

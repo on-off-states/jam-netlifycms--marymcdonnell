@@ -44,5 +44,8 @@
     "url-loader": "^1.0.1",
     "webpack": "4.6.0",
     "whatwg-fetch": "^2.0.4"
+  },
+  "devDependencies": {
+    "normalize.css": "^8.0.1"
   }
 }

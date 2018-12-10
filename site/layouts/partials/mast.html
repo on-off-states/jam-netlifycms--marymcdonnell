@@ -1,7 +1,7 @@
-<header class="c-mast">
+<header class="c-mast" role="banner">
   <a href="{{ .Site.BaseURL }}"><h1>{{ .Site.Title }}</h1></a>
   <p class="c-mast__desc">{{ .Site.Params.description | markdownify }}</p>
-  <nav class="c-main-nav">
+  <nav class="c-main-nav" role="navigation">
     <ul>
       <li><a href="/">Home</a> </li>
       {{ range .Site.Menus.main }}
