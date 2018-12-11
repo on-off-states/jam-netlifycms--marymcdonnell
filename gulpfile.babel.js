@@ -21,23 +21,15 @@ const hugoArgsPreview = ["--buildDrafts", "--buildFuture"];
 gulp.task("hugo", cb => buildSite(cb));
 gulp.task("hugo-preview", cb => buildSite(cb, hugoArgsPreview));
 
-// Run server tasks
-gulp.task("server", ["hugo", "css", "js", "fonts", "videos", "images"], cb =>
-  runServer(cb)
-);
-gulp.task(
-  "server-preview",
-  ["hugo-preview", "css", "js", "fonts", "videos", "images"],
-  cb => runServer(cb)
-);
+// updating from gulp 3 to 4 
+// array of dependency tasks now need to use gulp.series 
+// gulp.task("taskName", gulp.series(["otherTasks"], function () {
+//     /* other code */
+// }))
+// AND task undefined error when respective dependency tasks defined below use in gulp.series
 
-// Build/production tasks
-gulp.task("build", ["css", "js", "fonts", "videos", "images"], cb =>
-  buildSite(cb, [], "production")
-);
-gulp.task("build-preview", ["css", "js", "fonts", "videos", "images"], cb =>
-  buildSite(cb, hugoArgsPreview, "production")
-);
+// so here moved to top:
+// tasks used in gulp.series: 
 
 // Compile CSS with PostCSS
 gulp.task("css", () =>
@@ -53,7 +45,6 @@ gulp.task("css", () =>
     .pipe(gulp.dest("./dist/css"))
     .pipe(browserSync.stream())
 );
-
 // Compile Javascript
 gulp.task("js", cb => {
   const myConfig = Object.assign({}, webpackConfig);
@@ -97,6 +88,28 @@ gulp.task("images", () =>
     .pipe(browserSync.stream())
 );
 
+
+// Run server tasks
+gulp.task("server", gulp.series(["hugo", "css", "js", "fonts", "videos", "images"], cb =>
+  runServer(cb))
+);
+
+
+gulp.task(
+  "server-preview",
+  gulp.series(["hugo-preview", "css", "js", "fonts", "videos", "images"],
+  cb => runServer(cb))
+);
+
+// Build/production tasks
+gulp.task("build", gulp.series(["css", "js", "fonts", "videos", "images"], cb =>
+  buildSite(cb, [], "production"))
+);
+gulp.task("build-preview", gulp.series(["css", "js", "fonts", "videos", "images"], cb =>
+  buildSite(cb, hugoArgsPreview, "production"))
+);
+
+
 // Development server with browsersync
 function runServer() {
   browserSync.init({
@@ -104,13 +117,14 @@ function runServer() {
       baseDir: "./dist"
     }
   });
-  gulp.watch("./src/js/**/*.js", ["js"]);
-  gulp.watch("./src/css/**/*.css", ["css"]);
-  gulp.watch("./src/fonts/**/*", ["fonts"]);
-  gulp.watch("./src/img/**/*", ["images"]);
-  gulp.watch("./src/videos/**/*", ["videos"]);
-  gulp.watch("./site/**/*", ["hugo"]);
+  gulp.watch("./src/js/**/*.js", gulp.parallel(["js"]));
+  gulp.watch("./src/css/**/*.css", gulp.parallel(["css"]));
+  gulp.watch("./src/fonts/**/*", gulp.parallel(["fonts"]));
+  gulp.watch("./src/img/**/*", gulp.parallel(["images"]));
+  gulp.watch("./src/videos/**/*", gulp.parallel(["videos"]));
+  gulp.watch("./site/**/*", gulp.parallel(["hugo"]));
 }
+
 
 /**
  * Run hugo and build the site
