@@ -1,0 +1,41 @@
+# setup for netlify hosting with github
+# specify backend and publication branch
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+# media and public folders
+# media_folder => where uploaded files saved to in repo
+# public_folder => where they’re found in published site
+# These lines should *not* be indented
+media_folder: "src/img/uploads" # Media files will be stored in the repo under src/img/uploads
+public_folder: "/img/uploads" # The src attribute for uploaded media will begin with /img
+
+# -------------------------------------------
+# backend:
+#   name: git-gateway
+# media_folder: "img/uploads" # Folder where user uploaded files should go
+
+# collections: # A list of collections the CMS should be able to edit
+#   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
+#     label: "Post" # Used in the UI, ie.: "New Post"
+#     folder: "_posts" # The path to the folder where the documents are stored
+#     create: true # Allow users to create new documents in this collection
+#     fields: # The fields each document in this collection have
+#       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+#       - {label: "Foo", name: "foo", widget: "foo"}
+#       - {label: "Publish Date", name: "date", widget: "datetime"}
+# --------------------------------------------
+# backend:
+#   name: test-repo
+
+# media_folder: media_folder
+
+# collections:
+#   - name: post
+#     label: Post
+#     folder: posts
+#     create: true
+#     fields:
+#       - {name: title, label: Title}
+#       - {name: body, label: Body, widget: markdown}

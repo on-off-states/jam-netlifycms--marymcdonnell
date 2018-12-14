@@ -18,8 +18,8 @@ const hugoArgsDefault = ["-d", "../dist", "-s", "site", "-v"];
 const hugoArgsPreview = ["--buildDrafts", "--buildFuture"];
 
 // Development tasks
-gulp.task("hugo", cb => buildSite(cb));
-gulp.task("hugo-preview", cb => buildSite(cb, hugoArgsPreview));
+gulp.task("hugo", blackBox => buildSite(blackBox));
+gulp.task("hugo-preview", blackBox => buildSite(blackBox, hugoArgsPreview));
 
 // updating from gulp 3 to 4 
 // array of dependency tasks now need to use gulp.series 
@@ -46,7 +46,7 @@ gulp.task("css", () =>
     .pipe(browserSync.stream())
 );
 // Compile Javascript
-gulp.task("js", cb => {
+gulp.task("js", blackBox => {
   const myConfig = Object.assign({}, webpackConfig);
 
   webpack(myConfig, (err, stats) => {
@@ -59,7 +59,7 @@ gulp.task("js", cb => {
       })
     );
     browserSync.reload();
-    cb();
+    blackBox();
   });
 });
 
@@ -90,23 +90,23 @@ gulp.task("images", () =>
 
 
 // Run server tasks
-gulp.task("server", gulp.series(["hugo", "css", "js", "fonts", "videos", "images"], cb =>
-  runServer(cb))
+gulp.task("server", gulp.series(["hugo", "css", "js", "fonts", "videos", "images"], blackBox =>
+  runServer(blackBox))
 );
 
 
 gulp.task(
   "server-preview",
   gulp.series(["hugo-preview", "css", "js", "fonts", "videos", "images"],
-  cb => runServer(cb))
+  blackBox => runServer(blackBox))
 );
 
 // Build/production tasks
-gulp.task("build", gulp.series(["css", "js", "fonts", "videos", "images"], cb =>
-  buildSite(cb, [], "production"))
+gulp.task("build", gulp.series(["css", "js", "fonts", "videos", "images"], blackBox =>
+  buildSite(blackBox, [], "production"))
 );
-gulp.task("build-preview", gulp.series(["css", "js", "fonts", "videos", "images"], cb =>
-  buildSite(cb, hugoArgsPreview, "production"))
+gulp.task("build-preview", gulp.series(["css", "js", "fonts", "videos", "images"], blackBox =>
+  buildSite(blackBox, hugoArgsPreview, "production"))
 );
 
 
@@ -125,11 +125,10 @@ function runServer() {
   gulp.watch("./site/**/*", gulp.parallel(["hugo"]));
 }
 
-
 /**
  * Run hugo and build the site
  */
-function buildSite(cb, options, environment = "development") {
+function buildSite(blackBox, options, environment = "development") {
   const args = options ? hugoArgsDefault.concat(options) : hugoArgsDefault;
 
   process.env.NODE_ENV = environment;
@@ -137,10 +136,10 @@ function buildSite(cb, options, environment = "development") {
   return spawn(hugoBin, args, { stdio: "inherit" }).on("close", code => {
     if (code === 0) {
       browserSync.reload();
-      cb();
+      blackBox();
     } else {
       browserSync.notify("Hugo build failed :(");
-      cb("Hugo build failed");
+      blackBox("Hugo build failed");
     }
   });
 }
