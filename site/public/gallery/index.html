@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en">
+<html dir="ltr" lang="en-gb">
 <head>
   <meta http-equiv="cleartype" content="on">
   <meta charset="utf-8">
   
-  <meta name="generator" content="Hugo 0.51" />
+  <meta name="generator" content="Hugo 0.52" />
   <meta name="MobileOptimized" content="width">
   <meta name="HandheldFriendly" content="true">
-    
     
     <meta name="viewport" content="width="device-width, initial-scale=1.0>
     <meta name="title" content="" />
@@ -21,28 +20,24 @@
     
   
   
-  <title>Galleries &middot; Mary Mcdonnell</title>
+  <title>gallery &middot; Mary Mcdonnell</title>
   
   
   
   <link rel="stylesheet" href="/css/main.css">
-
   
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="/img/favicon.png">
+  
 
 </head>
 
 <body class="gallery">
+  <div class="wrap">
 
-<div class="sidebar">
-  <div class="container sidebar-sticky">
-    <div class="sidebar-about">
-      <a href="/"><h1>Mary Mcdonnell</h1></a>
-      <p class="lead">Artist in Slane</p>
-    </div>
-
-    <ul class="sidebar-nav">
+<header class="c-mast" role="banner">
+  <a href="/"><h1>Mary Mcdonnell</h1></a>
+  <p class="c-mast__desc">Artist in Slane</p>
+  <nav class="c-main-nav" role="navigation">
+    <ul>
       <li><a href="/">Home</a> </li>
       
         <li><a href="/about"> About </a></li>
@@ -53,42 +48,111 @@
       
         <li><a href="/teaching"> Teaching </a></li>
       
-        <li><a href="/dev"> Dev </a></li>
-      
     </ul>
-  </div>
-</div>
+  </nav>
+</header>
+ 
 
 
 
-<div class="content container Galleries gallery">
-  
+<main class="main-content main-content--gallery">
   <header class="c-section-header">
     <h1 class="c-section-header__headline">gallery</h1>
   </header>
-  
-  
-    <div class="gallery-carousel">
-      
-        <div><img src="/img/gallery/mm-slane__exhibition--blackbird-textile-w800.jpg"/></div>
-      
-        <div><img src="/img/gallery/mm-slane__exhibition--letter-woman.jpg"/></div>
-      
-        <div><img src="/img/gallery/mm-slane__exhibition--letter-ledgewick.jpg"/></div>
-      
-    </div>
-    <div class="buttons">
-      <button class="prev half-button">Prev</button>
-      <button class="next half-button">Next</button>
-    </div>
-  
-</div>
+  <div class="gallery-carousel">
+    
+      <figure><img src="/img/gallery/cherish-the-children.jpg" alt="" />
+        <figcaption>Cherish the children</figcaption>
+      </figure>
+    
+      <figure><img src="/img/gallery/blackbird-textile.jpg" alt="" />
+        <figcaption>Detail from embroidery textile</figcaption>
+      </figure>
+    
+      <figure><img src="/img/gallery/mm-slane__exhibition--letter-woman.jpg" alt="" />
+        <figcaption></figcaption>
+      </figure>
+    
+      <figure><img src="/img/gallery/mm-slane__exhibition--letter-ledgewick.jpg" alt="" />
+        <figcaption></figcaption>
+      </figure>
+    
+  </div>
+  <div class="buttons">
+    <button class="prev c-btn">prev</button>
+    <button class="next c-btn">next</button>
+  </div>
+  <article>
+    
+      <p>some body copy for displayed image (from the content of gallery-item.md)</p>
 
-<script src="/js/siema.min.js"></script>
-<script src='https://pawelgrzybek.com/siema/assets/siema.min.js'></script>
+    
+      
+    
+      
+    
+      
+     
+  </article>
+  <section>
+    <p><em>(For development testing purpose only)</em>:</p>
+    
+    <menu>
+        <ul>
+            <li><a href="/gallery/example-gallery-item/"> gallery-item</a>
+            <p><p>some body copy for displayed image (from the content of gallery-item.md)</p>
+</p></li>
 
-<script src="/app.js"></script>
-</body>
+        </ul>
+    </menu>
+    
+    <menu>
+        <ul>
+            <li><a href="/gallery/blackbird-textile/"> Blackbird textile</a>
+            <p></p></li>
+
+        </ul>
+    </menu>
+    
+    <menu>
+        <ul>
+            <li><a href="/gallery/portrait/"> portrait</a>
+            <p></p></li>
+
+        </ul>
+    </menu>
+    
+    <menu>
+        <ul>
+            <li><a href="/gallery/letter/"> the letter</a>
+            <p></p></li>
+
+        </ul>
+    </menu>
+    
+  </section>
+  <hr>
+  <article>
+    <h2>Hard coded notes (<code>layouts/gallery/list.html</code>)</h2>
+
+    <p>Some article text for additional content relating to selected image. For making relational links to other content—make use of taxonomies?</p>
+    <hr />
+    
+    <p>Using <code>.Content</code> in layouts/gallery/list.html displays content/gallery _index.html content:</p>
+    <p>This is the content in content/gallery/index.md with a trailing horizontal rule
+<hr /></p>
+
+    <p>How to access <code>.Content</code> of individual gallery items?
+    Solution that was blindingly obvious: use <code>.Content</code> within  <code>range .Pages</code> loop.</p>
+  
+  
+  </article>    
+</main>
+<footer class="c-site-footer"><small>&copy; Mary Mcdonnell 2018</small></footer>
+  </div>
+    <script src='https://pawelgrzybek.com/siema/assets/siema.min.js'></script>
+    <script src="/app.js"></script>
+  </body>
 </html>
 
 

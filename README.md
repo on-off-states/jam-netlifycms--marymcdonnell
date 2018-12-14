@@ -1,8 +1,6 @@
-# Site staging for 
-<!-- Markdown snippet -->
-![sample image](img-url)
+# mm-slane site development staging 
 
-Repository for the mary-mcdonnell site prototyping staging: hugo site based on reworking of victor-hugo.
+Repository for mm-slane project site development prototype staging (using hugo SSG based on reworking of victor-hugo, hosted on netlify).
 
 ## System Requirements
 

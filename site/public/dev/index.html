@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en">
+<html dir="ltr" lang="en-gb">
 <head>
   <meta http-equiv="cleartype" content="on">
   <meta charset="utf-8">
   
-  <meta name="generator" content="Hugo 0.51" />
+  <meta name="generator" content="Hugo 0.52" />
   <meta name="MobileOptimized" content="width">
   <meta name="HandheldFriendly" content="true">
-    
     
     <meta name="viewport" content="width="device-width, initial-scale=1.0>
     <meta name="title" content="" />
@@ -21,28 +20,24 @@
     
   
   
-  <title>Dev Content File Test &middot; Mary Mcdonnell</title>
+  <title>Dev notes index &middot; Mary Mcdonnell</title>
   
   
   
   <link rel="stylesheet" href="/css/main.css">
-
   
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="/img/favicon.png">
+  
 
 </head>
 
 <body class="dev">
+  <div class="wrap">
 
-<div class="sidebar">
-  <div class="container sidebar-sticky">
-    <div class="sidebar-about">
-      <a href="/"><h1>Mary Mcdonnell</h1></a>
-      <p class="lead">Artist in Slane</p>
-    </div>
-
-    <ul class="sidebar-nav">
+<header class="c-mast" role="banner">
+  <a href="/"><h1>Mary Mcdonnell</h1></a>
+  <p class="c-mast__desc">Artist in Slane</p>
+  <nav class="c-main-nav" role="navigation">
+    <ul>
       <li><a href="/">Home</a> </li>
       
         <li><a href="/about"> About </a></li>
@@ -53,29 +48,58 @@
       
         <li><a href="/teaching"> Teaching </a></li>
       
-        <li><a href="/dev"> Dev </a></li>
-      
+    </ul>
+  </nav>
+</header>
+ 
+
+
+<header class="c-section-header">
+    <h1 class="c-section-header__headline">dev</h1>
+    <h2 class="c-section-header__headline"></h2>
+</header>
+<div class="content container">
+  <div class="meta">
+    <ul>
+      <li>This is dev/_index.md</li>
+      <li><em>list content (Kind = section): using layouts/dev/list.html</em><br />ie. section specific list template overriding default _default/list.html</li>
     </ul>
   </div>
-</div>
+    <h2>Displaying dev section specific _index.md .Content</h2>
+    <p>and hello from content/dev/_index.md content
+<hr></p>
 
+    <h2>Looping through section pages</h2>
+    
+    <menu>
+        <ul>
+            <li><a href="/dev/dullard/"> Dullard notes</a></li>
+        </ul>
+    </menu>
 
+    
+    <menu>
+        <ul>
+            <li><a href="/dev/hugo-directory-structure/"> Hugo Directory Structure</a></li>
+        </ul>
+    </menu>
 
-<div class="content container">
-  
+    
+    <menu>
+        <ul>
+            <li><a href="/dev/testing-dev-content-file/"> Dev Content File Test</a></li>
+        </ul>
+    </menu>
 
-<h1 id="testing-dev-dev-content-file-test-md">Testing dev/dev-content-file-test.md</h1>
-
-<p>need to go over how content structure works again and get relation between section content and layout template files</p>
-
-</div>
-
-<script src="/js/siema.min.js"></script>
-<script src='https://pawelgrzybek.com/siema/assets/siema.min.js'></script>
-
-<script src="/app.js"></script>
-</body>
+    
+    
+  </div>
+    <script src='https://pawelgrzybek.com/siema/assets/siema.min.js'></script>
+    <script src="/app.js"></script>
+  </body>
 </html>
+
+
 
 
 
