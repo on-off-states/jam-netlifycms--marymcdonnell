@@ -53,4 +53,5 @@ date = "2018-12-04T18:03:01Z"
     <li>page Kinds (<code>.Kind</code>)</li>
     <li><strong>dullard alert</strong>: calling custom page variables with .Params.[var] — .context (rabbit hole initially trying to call variable from single page content dev/dullard.md variable from dev/_index.md list page for that section)</li>
   </ul>
+  
 </article>

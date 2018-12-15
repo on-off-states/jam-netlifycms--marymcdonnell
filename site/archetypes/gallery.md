@@ -1,5 +1,5 @@
 +++
-title = "{{ .Name }}"
+title = "{{ replace .Name "-" " " | title }}"
 description = ""
 image = "/img/gallery/"
 date = "{{ .Date }}"
