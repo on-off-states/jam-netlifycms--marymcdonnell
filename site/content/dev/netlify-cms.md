@@ -1,5 +1,5 @@
 +++
-title = "Title"
+title = "Netlify cms"
 date = "2018-12-15T19:42:38Z"
 slug = "netlify-cms"
 +++
