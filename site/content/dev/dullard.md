@@ -55,3 +55,28 @@ date = "2018-12-04T18:03:01Z"
   </ul>
   
 </article>
+<section>
+  <h3>Asides</h3>
+  <aside>
+   <h4>Git note</h4>
+   <p>Hit confusion after trying to add new post from cms admin on netlify (new post would not write — API error because example collection for post has no corresponding markup in rendering template? image uploaded as it should after temporary confusion with branch setting in admin/config.yml).<strong>Just the upload of image to remote src/img/uploads (media_folder config) meant unable to push new changes local to remote without first doing <code>$ git pull</code></strong>.</p>
+   <p>For git pull need full remote url (as shown with $ git remote -v) followed by branch). This by default opens vim requiring commit message entry:</p>
+   <ol>
+    <li>press "i"</li>
+    <li>write merge message</li>
+    <li>press "esc"</li>
+    <li>write ":wq"</li>
+    <li>press enter</li>
+   </ol>
+   <p>("i" for "insert", "esc" is the exit the insertion, and ":wq" is just "write" and "quit")</p>
+   <p>Made strange mess with commit message doing this. See <a href="https://tomanistor.com/blog/how-to-change-most-recent-commit-message/">Toma Nistor’s helpful post for the likes of me making silly message errors</a>.</p>
+   <p><strong>AND NOTE</strong>: No matter where you access Netlify CMS — whether running locally, in a staging environment, or in your published site — it always fetches and commits files in your hosted repository (for example, on GitHub), on the branch you configured in your Netlify CMS config.yml file. This means that content fetched in the admin UI matches the content in the repository, which may be different from your locally running site. It also means that content saved using the admin UI saves directly to the hosted repository, even if you're running the UI locally or in staging.</p>
+   
+
+    
+    
+    
+    
+
+    
+ 
