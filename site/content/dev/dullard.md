@@ -69,8 +69,9 @@ date = "2018-12-04T18:03:01Z"
     <li>press enter</li>
    </ol>
    <p>("i" for "insert", "esc" is the exit the insertion, and ":wq" is just "write" and "quit")</p>
-   <p>Made strange mess with commit message doing this. See <a href="https://tomanistor.com/blog/how-to-change-most-recent-commit-message/">Toma Nistor’s helpful post for the likes of me making silly message errors</a>.</p>
+   <p>Made strange mess with commit message doing this. See <a href="https://tomanistor.com/blog/how-to-change-most-recent-commit-message/">Toma Nistor’s helpful post for the likes of me making silly message errors</a>. More useful notes on <a href="https://stackoverflow.com/questions/19085807/please-enter-a-commit-message-to-explain-why-this-merge-is-necessary-especially">stackoverflow</a> on this issue.</p>
    <p><strong>AND NOTE</strong>: No matter where you access Netlify CMS — whether running locally, in a staging environment, or in your published site — it always fetches and commits files in your hosted repository (for example, on GitHub), on the branch you configured in your Netlify CMS config.yml file. This means that content fetched in the admin UI matches the content in the repository, which may be different from your locally running site. It also means that content saved using the admin UI saves directly to the hosted repository, even if you're running the UI locally or in staging.</p>
+
    
 
     
