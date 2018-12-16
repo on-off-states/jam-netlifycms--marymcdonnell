@@ -17,16 +17,27 @@ public_folder: "/img/uploads" # The src attribute for uploaded media will begin 
 # media_folder: "img/uploads" # Folder where user uploaded files should go
 
 collections: # A list of collections the CMS should be able to edit
-  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Post" # Used in the UI, ie.: "New Post"
-    folder: "_posts" # The path to the folder where the documents are stored
+# gallery 
+- name: gallery
+    label: "Gallery Image" # Used in the UI, ie.: "New Post"
+    folder: "site/content/gallery" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Foo", name: "foo", widget: "foo"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-# --------------------------------------------
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Gallery Image", name: "image", widget: "image"}
+
+# example collection
+# -------------------------------------------------------------------
+  # - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
+  #   label: "Post" # Used in the UI, ie.: "New Post"
+  #   folder: "site/content/posts" # The path to the folder where the documents are stored
+  #   create: true # Allow users to create new documents in this collection
+  #   fields: # The fields each document in this collection have
+  #     - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+  #     - {label: "Body", name: "body", widget: "markdown"}
+  #     - {label: "Foo", name: "foo", widget: "foo"}
+  #     - {label: "Publish Date", name: "date", widget: "datetime"}
+# -------------------------------------------------------------------
 # backend:
 #   name: test-repo
 
