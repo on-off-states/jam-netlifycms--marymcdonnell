@@ -19,18 +19,35 @@ public_folder: "/img/uploads" # The src attribute for uploaded media will begin 
 collections: # A list of collections the CMS should be able to edit
 # gallery 
 - name: gallery
-  label: "Gallery Image" # Used in the UI, ie.: "New Post"
+  label: "Gallery item" # Used in the UI, ie.: "New Post"
   folder: "site/content/gallery" # The path to the folder where the documents are stored
+  slug: "{{slug}}"
   create: true # Allow users to create new documents in this collection
-  fields: # The fields each document in this collection have
+  fields: # The fields each document in this collection have (usually corresponding to file.md front matter)
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Description", name: "description", widget: "string"}
-    - {label: "Gallery Image", name: "image", widget: "image"}
+    - {label: "Image", name: "image", widget: "image"}
 
 
-# example collection
+
+# examples
 # -------------------------------------------------------------------
-  # - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
+  
+# collections:
+#   - name: "blog" # Used in routes, e.g., /admin/collections/blog
+#     label: "Blog" # Used in the UI
+#     folder: "_posts/blog" # The path to the folder where the documents are stored
+#     create: true # Allow users to create new documents in this collection
+#     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+#     fields: # The fields for each document, usually in front matter
+#       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+#       - {label: "Title", name: "title", widget: "string"}
+#       - {label: "Publish Date", name: "date", widget: "datetime"}
+#       - {label: "Featured Image", name: "thumbnail", widget: "image"}
+#       - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
+#       - {label: "Body", name: "body", widget: "markdown"}
+      
+# - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
   #   label: "Post" # Used in the UI, ie.: "New Post"
   #   folder: "site/content/posts" # The path to the folder where the documents are stored
   #   create: true # Allow users to create new documents in this collection
@@ -39,6 +56,7 @@ collections: # A list of collections the CMS should be able to edit
   #     - {label: "Body", name: "body", widget: "markdown"}
   #     - {label: "Foo", name: "foo", widget: "foo"}
   #     - {label: "Publish Date", name: "date", widget: "datetime"}
+  
 # -------------------------------------------------------------------
 # backend:
 #   name: test-repo
@@ -53,3 +71,4 @@ collections: # A list of collections the CMS should be able to edit
 #     fields:
 #       - {name: title, label: Title}
 #       - {name: body, label: Body, widget: markdown}
+

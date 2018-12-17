@@ -4,5 +4,5 @@ description = "Detail from embroidery textile"
 image = "/img/gallery/blackbird-textile.jpg"
 slug = "Blackbird-textile"
 +++
-
+blackbird item content
 

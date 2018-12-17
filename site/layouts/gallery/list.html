@@ -15,36 +15,12 @@
     <button class="prev c-btn">prev</button>
     <button class="next c-btn">next</button>
   </div>
-  <article>
-    {{ range .Pages }}
-      {{ .Content }}
-    {{ end }} 
-  </article>
-  <section>
-    <p><em>(For development testing purpose only)</em>:</p>
-    {{ range .Pages }}
-    <menu>
-        <ul>
-            <li><a href="{{ .URL }}"> {{ .Title }}</a>
-            <p>{{ .Content }}</p></li>
 
-        </ul>
-    </menu>
-    {{ end }}
-  </section>
+  
   <hr>
   <article>
-    <h2>Hard coded notes (<code>layouts/gallery/list.html</code>)</h2>
-
     <p>Some article text for additional content relating to selected image. For making relational links to other content—make use of taxonomies?</p>
     <hr />
-    <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
-    <p>Using <code>.Content</code> in layouts/gallery/list.html displays content/gallery _index.html content:</p>
-    {{ .Content }}
-    <p>How to access <code>.Content</code> of individual gallery items?
-    Solution that was blindingly obvious: use <code>.Content</code> within  <code>range .Pages</code> loop.</p>
-  
-  
   </article>    
 </main>
 {{ partial "footer" . }}
