@@ -8,27 +8,23 @@ backend:
 # media_folder => where uploaded files saved to in repo
 # public_folder => where they’re found in published site
 # These lines should *not* be indented
-media_folder: "src/img/uploads" # Media files will be stored in the repo under src/img/uploads
+media_folder: "src/img/uploads" # Directory where uploaded media files will be stored 
 public_folder: "/img/uploads" # The src attribute for uploaded media will begin with /img
+display_url: https://your-site.com # display site URL for return to site
 
-# -------------------------------------------
-# backend:
-#   name: git-gateway
-# media_folder: "img/uploads" # Folder where user uploaded files should go
 
 collections: # A list of collections the CMS should be able to edit
 # gallery 
 - name: gallery
-  label: "Gallery item" # Used in the UI, ie.: "New Post"
-  folder: "site/content/gallery" # The path to the folder where the documents are stored
+  label: "New gallery item" # Used in the UI, ie.: "New Post"
+  folder: "site/content/gallery" # The path to the folder where the documents/created item files are stored
   slug: "{{slug}}"
   create: true # Allow users to create new documents in this collection
   fields: # The fields each document in this collection have (usually corresponding to file.md front matter)
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Description", name: "description", widget: "string"}
     - {label: "Image", name: "image", widget: "image"}
-
-
+    - {label: "Article copy text", name: "copy", widget: "text"}
 
 # examples
 # -------------------------------------------------------------------
@@ -57,18 +53,4 @@ collections: # A list of collections the CMS should be able to edit
   #     - {label: "Foo", name: "foo", widget: "foo"}
   #     - {label: "Publish Date", name: "date", widget: "datetime"}
   
-# -------------------------------------------------------------------
-# backend:
-#   name: test-repo
-
-# media_folder: media_folder
-
-# collections:
-#   - name: post
-#     label: Post
-#     folder: posts
-#     create: true
-#     fields:
-#       - {name: title, label: Title}
-#       - {name: body, label: Body, widget: markdown}
 
