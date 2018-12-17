@@ -6,8 +6,8 @@
   </header>
   <div class="gallery-carousel">
     {{ range where .Pages "Section" "gallery" }}
-      <figure><img src="{{ .Params.image }}" alt="" />
-        <figcaption>{{ .Params.description }}</figcaption>
+      <figure><img class="gallery-carousel__img"src="{{ .Params.image }}" alt="" />
+        <figcaption class="gallery-carousel__caption">{{ .Params.description }}</figcaption>
       </figure>
     {{ end }}
   </div>
