@@ -1,8 +1,7 @@
-+++
-title = "Blackbird textile"
-description = "Detail from embroidery textile"
-image = "/img/gallery/blackbird-textile.jpg"
-slug = "Blackbird-textile"
-+++
-blackbird item content
+---
+title: Blackbird textile
+description: Detail from embroidery textile
+image: /img/gallery/blackbird-textile.jpg
+copy: 'some article text for blackbird textile  '
+---
 
