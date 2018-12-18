@@ -6,9 +6,12 @@
   </header>
   <div class="gallery-carousel">
     {{ range where .Pages "Section" "gallery" }}
-      <figure><img class="gallery-carousel__img"src="{{ .Params.image }}" alt="" />
-        <figcaption class="gallery-carousel__caption">{{ .Params.description }}</figcaption>
+      <figure><img class="gallery-carousel__img"src="{{ .Params.image }}" alt="{{ .Params.description }}" />
+        <figcaption class="gallery-carousel__caption">{{ .Params.description }}<p>{{ .Content }}</p></figcaption>
       </figure>
+      <!-- set custom var here for .Content ? -->
+      <!-- does any additional content before end carousel div suppress img display?  YES -->
+      <!-- <p>rogue content outside figure but inside gallery-carousel div</p> -->
     {{ end }}
   </div>
   <div class="buttons">
@@ -17,7 +20,7 @@
   </div>
   <hr>
   <article>
-    <p>Some article text for additional content relating to selected image. For making relational links to other content—make use of taxonomies?</p>
+    <p class="u-todo">Some article text for additional content relating to selected image. For making relational links to other content—make use of taxonomies?</p>
     <hr />
   </article>    
 </main>

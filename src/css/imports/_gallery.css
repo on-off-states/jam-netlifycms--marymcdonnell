@@ -4,4 +4,8 @@
 
 .gallery-carousel__img {
   width: 100%;
+  max-width: 720px; /* set minimum height instead? */
 }
+
+
+/* 940px × 627px (scaled to 720px × 525px) */

@@ -10,21 +10,27 @@ backend:
 # These lines should *not* be indented
 media_folder: "src/img/uploads" # Directory where uploaded media files will be stored 
 public_folder: "/img/uploads" # The src attribute for uploaded media will begin with /img
-display_url: https://your-site.com # display site URL for return to site
+display_url: https://marymcdonnell-staging.netlify.com/ # display site URL for return to site
+logo_url: https://your-site.com/images/logo.svg # optional custom logo display top of login page
+
 
 
 collections: # A list of collections the CMS should be able to edit
 # gallery 
 - name: gallery
-  label: "New gallery item" # Used in the UI, ie.: "New Post"
+  label: Gallery items" # Used in the UI, ie.: "New Post"
+  label-singular: "New gallery item"  # singular label for certain elements in the editor ():
+  description: "Add new item for each image and fill fields" # optional text, displayed below the label when viewing a collection  
   folder: "site/content/gallery" # The path to the folder where the documents/created item files are stored
-  slug: "{{slug}}"
+  slug: "{{slug}}-{{year}}-{{month}}-{{day}}"
+  format: toml-frontmatter 
   create: true # Allow users to create new documents in this collection
   fields: # The fields each document in this collection have (usually corresponding to file.md front matter)
-    - {label: "Title", name: "title", widget: "string"}
-    - {label: "Description", name: "description", widget: "string"}
+  
+    - {label: "Title", name: "title", widget: "string"} 
+    - {label: "Description", name: "description", widget: "string" default: "Art-work by Mary McDonnell"}
     - {label: "Image", name: "image", widget: "image"}
-    - {label: "Article copy text", name: "copy", widget: "text"}
+    - {label: "Article body-copy text", name: "body", widget: "markdown"}
 
 # examples
 # -------------------------------------------------------------------
