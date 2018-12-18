@@ -1,6 +1,6 @@
 +++
-title = "gallery-item"
-description = "Cherish the children"
+title = "Cherish the children"
+description = "Cherish the children embroidery"
 image = "/img/gallery/cherish-the-children.jpg"
 date = "2018-12-12T18:52:45Z"
 slug = "example-gallery-item"

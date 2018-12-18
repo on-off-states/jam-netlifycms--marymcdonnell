@@ -2,7 +2,7 @@
 
 <main class="main-content main-content--{{ .Section | urlize }}">
   <header class="c-section-header">
-    <h1 class="c-section-header__headline">{{ .Section }}</h1>
+    <h1 class="c-section-header__headline">{{ .Section }}: <span class="u-todo">collection name here (subsection content)</span></h1>
   </header>
   <div class="gallery-carousel">
     {{ range where .Pages "Section" "gallery" }}
