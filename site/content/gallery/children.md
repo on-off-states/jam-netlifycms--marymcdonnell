@@ -8,4 +8,4 @@ tags = []
 keywords = ""
 stylesheet = ""
 +++
-some article copy for this image
+some body copy for displayed image (from the content of gallery-item.md)
