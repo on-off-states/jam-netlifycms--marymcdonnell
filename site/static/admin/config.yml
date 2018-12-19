@@ -30,7 +30,7 @@ collections: # A list of collections the CMS should be able to edit
     - {label: "Title", name: "title", widget: "string"} 
     - {label: "Description", name: "description", widget: "string"}
     - {label: "Image", name: "image", widget: "image"}
-    - {label: "Article body-copy text", name: "body", widget: "text"}
+    - {label: "Article text", name: "body", widget: "text"}
 
 # examples
 # -------------------------------------------------------------------
