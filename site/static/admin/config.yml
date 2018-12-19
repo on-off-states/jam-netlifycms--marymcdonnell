@@ -28,9 +28,9 @@ collections: # A list of collections the CMS should be able to edit
   fields: # The fields each document in this collection have (usually corresponding to file.md front matter)
   
     - {label: "Title", name: "title", widget: "string"} 
-    - {label: "Description", name: "description", widget: "string", default: "Art-work by Mary McDonnell"}
+    - {label: "Description", name: "description", widget: "string"}
     - {label: "Image", name: "image", widget: "image"}
-    - {label: "Article body-copy text", name: "body", widget: "markdown"}
+    - {label: "Article body-copy text", name: "body", widget: "text"}
 
 # examples
 # -------------------------------------------------------------------
