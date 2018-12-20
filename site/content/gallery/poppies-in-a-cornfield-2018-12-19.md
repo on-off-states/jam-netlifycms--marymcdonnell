@@ -1,6 +1,6 @@
 +++
-title = "Poppies in a cornfield"
-description = "Detail from larger empbroidery of field  of poppies."
+title = "Places the poet new"
+description = "Toppgraphy detail from larger embroidery"
 image = "/img/uploads/poet-places.jpg"
 +++
-Article text.
+Article text for places the poet new
