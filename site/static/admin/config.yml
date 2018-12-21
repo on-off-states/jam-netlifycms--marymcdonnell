@@ -12,6 +12,8 @@ media_folder: "src/img/uploads" # Directory where uploaded media files will be s
 public_folder: "/img/uploads" # The src attribute for uploaded media will begin with /img
 display_url: https://marymcdonnell-staging.netlify.com/ # display site URL for return to site
 logo_url: https://your-site.com/images/logo.svg # optional custom logo display top of login page
+publish_mode: editorial_workflow # allow for review of new content before going live to main repository branch
+
 
 
 
