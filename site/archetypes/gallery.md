@@ -7,5 +7,4 @@ slug = "{{ .Name }}"
 tags = []
 keywords = ""
 stylesheet = ""
-
 +++
