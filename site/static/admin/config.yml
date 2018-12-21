@@ -20,7 +20,7 @@ publish_mode: editorial_workflow # allow for review of new content before going 
 collections: # A list of collections the CMS should be able to edit
 # gallery 
 - name: gallery
-  label: Gallery items" # Used in the UI, ie.: "New Post"
+  label: "Gallery items" # Used in the UI, ie.: "New Post"
   label-singular: "New item"  # singular label for certain elements in the editor ():
   description: "Add new item for each image and fill fields" # optional text, displayed below the label when viewing a collection  
   folder: "site/content/gallery" # The path to the folder where the documents/created item files are stored
