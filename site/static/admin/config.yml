@@ -33,8 +33,10 @@ collections: # A list of collections the CMS should be able to edit
     - {label: "Title", name: "title", widget: "string"} 
     - {label: "Description", name: "description", widget: "string"}
     - {label: "Image", name: "image", widget: "image"}
-    - {label: "Article text", name: "body", widget: "markdown", buttons:["link"], default: "accepts markdown content", hint: "optionally add helper text directly below a widget. Useful for including instructions", required: false}
-# buttons: an array of strings representing the formatting buttons to display, all buttons shown by default. Buttons include: bold, italic, code, link, heading-one, heading-two, quote, code-block, bulleted-list, and numbered-list
+    - {label: "Article text", name: "body", widget: "markdown", buttons:["link"], default: "Some default entry content (accepts markdown content)", hint: "Here you can add an optional body copy entry to accompany the image; use the link button if you need to include a link", required: false}
+# buttons: optipn within markdown widget: array of strings representing the formatting buttons to display, all buttons shown by default. Buttons include: bold, italic, code, link, heading-one, heading-two, quote, code-block, bulleted-list, and numbered-list
+# hint: optionally add helper text directly below a widget. Useful for including instructions
+
 # examples
 # -------------------------------------------------------------------
   
