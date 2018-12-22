@@ -7,7 +7,7 @@
   <div class="gallery-carousel">
     {{ range where .Pages "Section" "gallery" }}
       <figure><img class="gallery-carousel__img"src="{{ .Params.image }}" alt="{{ .Params.description }}" />
-        <figcaption class="gallery-carousel__caption">{{ .Params.description }}<p>{{ .Content }}</p></figcaption>
+        <figcaption class="gallery-carousel__caption">{{ .Params.description }}<p>{{ .Content }} <span class="u-todo">temp paragraph element display of .Content within figcaption (to display CMS created .md file body content below front matter need to name markdown widget field as body to be recognised by CMS and saved accordingly) TO BE MOVED OUTSIDE RANGE LOOP</span></p></figcaption>
       </figure>
       <!-- set custom var here for .Content ? -->
       <!-- does any additional content before end carousel div suppress img display?  YES -->
