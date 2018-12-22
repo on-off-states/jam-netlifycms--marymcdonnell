@@ -22,7 +22,8 @@ collections: # A list of collections the CMS should be able to edit
 - name: gallery
   label: "Gallery items" # Used in the UI, ie.: "New Post"
   label-singular: "New item"  # singular label for certain elements in the editor ():
-  description: "Add new item for each image and fill fields" # optional text, displayed below the label when viewing a collection  
+  description: "Add a new item for each image and fill fields. Article text is for if you want to add optional accompanying body copy for the image." # optional text, displayed below the label when viewing a collection 
+  # (wanted to put this within the respective markdown widget as with help text in perch templates but no joy — but aha, hint is for helper text) description: "Optional accompanying body copy for the image" 
   folder: "site/content/gallery" # The path to the folder where the documents/created item files are stored
   slug: "{{slug}}-{{year}}-{{month}}-{{day}}"
   format: toml-frontmatter 
@@ -32,7 +33,7 @@ collections: # A list of collections the CMS should be able to edit
     - {label: "Title", name: "title", widget: "string"} 
     - {label: "Description", name: "description", widget: "string"}
     - {label: "Image", name: "image", widget: "image"}
-    - {label: "Article text", name: "body", description: "Optional accompanying body copy for the image", widget: "markdown", buttons:["link"] }
+    - {label: "Article text", name: "body", widget: "markdown", buttons:["link"], default: "accepts markdown content", hint: "optionally add helper text directly below a widget. Useful for including instructions", required: false}
 # buttons: an array of strings representing the formatting buttons to display, all buttons shown by default. Buttons include: bold, italic, code, link, heading-one, heading-two, quote, code-block, bulleted-list, and numbered-list
 # examples
 # -------------------------------------------------------------------
